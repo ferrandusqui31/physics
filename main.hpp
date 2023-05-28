@@ -2,13 +2,11 @@
 
 namespace phy{
 
-class obj
-{
-
+class obj{
 public:
 
 // Variables
-double x, y, z; // Position
+double x, y, z; // Position (height is z)
 double vx, vy, vz; // Velocity
 
 // Methods
@@ -20,18 +18,15 @@ void setv(double a, double b, double c)
 }
 
 // Constructor
-
 obj(double a, double b, double c)
 {
     x=a;
     y=b;
     z=c;
 }
-
 };
 
-class vector
-{
+class vector{
 
 public:
 double x, y, z; // Components
@@ -48,7 +43,6 @@ vector(double a, double b, double c){
     y=b;
     z=c;
 }
-
 };
 
 // Vector operations
@@ -59,5 +53,4 @@ vector add(vector v1, vector v2){
 vector subtract(vector v1, vector v2){
     return vector (v1.x-v2.x , v1.y-v2.y , v1.z-v2.z);
 }
-
 }
