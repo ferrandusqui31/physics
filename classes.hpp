@@ -7,27 +7,27 @@ public:
 
 // Variables
 phy::Vector pos = {0, 0, 0}; // Position (x, y, z). z is used for height
-double vx, vy, vz; // Velocity
-double ax, ay, az; // Acceleration
-double fx, fy, fz; // Forces
+phy::Vector vel = {0, 0, 0}; // Velocity
+phy::Vector acc = {0, 0, 0}; // Acceleration
+phy::Vector frc = {0, 0, 0}; // Forces
 
 // Methods
 void setV(double _x, double _y, double _z){
-    this->vx = _x;
-    this->vy = _y;
-    this->vz = _z;
+    this->vel.x = _x;
+    this->vel.y = _y;
+    this->vel.z = _z;
 };
 
 void setA(double _x, double _y, double _z){
-    this->ax = _x;
-    this->ay = _y;
-    this->az = _z;
+    this->acc.x = _x;
+    this->acc.y = _y;
+    this->acc.z = _z;
 };
 
 void setF(double _x, double _y, double _z){
-    this->fx = _x;
-    this->fy = _y;
-    this->fz = _z;
+    this->frc.x = _x;
+    this->frc.y = _y;
+    this->frc.z = _z;
 };
 
 // Constructor
